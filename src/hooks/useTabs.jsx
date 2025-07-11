@@ -7,5 +7,5 @@ export default function useTabs(initialValue = 0){
         setTab(selectedTab)
     }
 
-    return [ tab, setCurrentTab ]
+    return { tab, setCurrentTab}
 }
