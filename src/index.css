@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.dark-mode{
+    background-color: #1a1b1f;
+    color: white;
+}
+
+body{
+    padding: 1em;
+    font-family: 'Inter', sans-serif;
+}
+
+h1,h2{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.section{
+    margin-bottom: 30px;
+}
+
+.badge-section{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.banner-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+}
+
+.success{
+    background-color: #ECFDF5;
+    color: #047857;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.success h3{
+    margin-bottom: 10px;
+    color: #065F46;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.warning{
+    background-color: #FFFBEB;
+    color: #B45309;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.warning h3{
+    margin-bottom: 10px;
+    color: #92400E;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.error{
+    background-color: #FEF2F2;
+    color: #B45309;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.error h3{
+    margin-bottom: 10px;
+    color: #92400E;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.neutral{
+    background-color: #EFF6FF;
+    color: #1C51B9;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.neutral h3{
+    margin-bottom: 10px;
+    color: #1E40AF;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+
+
