@@ -175,6 +175,8 @@
     font-size: 2rem;
     
 }
+
+/* Tabs navbar */
 .success{
     background-color: #ECFDF5;
     color: #047857;
@@ -226,3 +228,5 @@
     font-size: 0.875rem;
     font-weight: 500;
 }
+
+

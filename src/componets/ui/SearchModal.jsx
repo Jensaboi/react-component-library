@@ -1,6 +1,6 @@
 import React from "react"
 import { IoMdSearch } from "react-icons/io";
-import useToggle from "../hooks/useToggle";
+import useToggle from "../../hooks/useToggle";
 import { IoCloseOutline } from "react-icons/io5";
 
 export default function SearchModal(){

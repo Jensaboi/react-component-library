@@ -6,10 +6,10 @@ import ButtonsTab from "../tabs/ButtonsTab"
 import BadgesTab from "../tabs/BadgesTab"
 
 export default function ComponentsPage(){
-    const [tab, setCurrentTab ] = useTabs(0)
+    const [tab, setCurrentTab ] = useTabs()
 
     const allTabs = [
-        {label: 'Buttons', tab: <ButtonsTab />}, 
+        {label: 'Buttons', tab: <ButtonsTab />},
         {label: 'Banners', tab: <BannersTab />}, 
         {label: 'Badges', tab: <BadgesTab />}
     ]
@@ -17,9 +17,7 @@ export default function ComponentsPage(){
         <main>
             <Header />
             <section>
-                <h2>Components</h2>
-                <p></p>
-                <nav>
+                <nav className="tabs-navbar">
                     {
                         allTabs.map((tab, index) => (
                             <button key={tab.label} onClick={()=> setCurrentTab(index)}>{tab.label}</button>

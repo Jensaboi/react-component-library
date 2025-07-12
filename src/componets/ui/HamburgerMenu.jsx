@@ -1,8 +1,8 @@
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import useToggle from "../hooks/useToggle";
+import useToggle from "../../hooks/useToggle";
 import { IoCloseOutline } from "react-icons/io5";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import { MdOutlineLightMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 
