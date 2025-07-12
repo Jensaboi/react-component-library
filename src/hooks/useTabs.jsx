@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export default function useTabs(initialValue = 0){
-    const [tab, setTab] = useState(initialValue)
+    const [tabIndex, setTabIndex] = useState(initialValue)
 
-    function setCurrentTab(selectedTab){
-        setTab(selectedTab)
+    function setCurrentTabIndex(selectedTabIndex){
+        setTabIndex(selectedTabIndex)
     }
 
-    return [ tab , setCurrentTab]
+    return [ tabIndex , setCurrentTabIndex]
 }

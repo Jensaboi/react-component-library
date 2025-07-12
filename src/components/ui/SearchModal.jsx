@@ -11,7 +11,6 @@ export default function SearchModal(){
         <div>
             <button
                 onClick={toggleOpen}
-                className="button-reset"
                 >
                 <IoMdSearch className="utility-icons" size="20px"/>
             </button>
