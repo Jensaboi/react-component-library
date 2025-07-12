@@ -1,8 +1,11 @@
 
 
-export default function Button({ variant ,children, ...rest}){
+export default function Button({ variant , children, className, ...rest}){
+    const variants ={
+        tabBtn: ''
+    }
     return(
-        <button
+        <button className="border-none"
             {...rest}
         >
             {children}
