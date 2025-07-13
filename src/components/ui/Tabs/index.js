@@ -1,6 +1,10 @@
 import Tabs from "./Tabs";
-import TabButton from "./TabButton";
+import TabsButton from "./TabsButton";
 import TabsList from "./TabsList";
+import TabsDisplay from "./TabsDisplay";
 
-Tabs.Button = TabButton;
+Tabs.Button = TabsButton;
 Tabs.List = TabsList;
+Tabs.Display = TabsDisplay;
+
+export default Tabs;
