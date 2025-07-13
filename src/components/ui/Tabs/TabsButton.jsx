@@ -4,15 +4,14 @@ import { TabsContext } from "./Tabs";
 export default function TabsButton({ children, index, ...rest }) {
   const { currentTabIndex, setCurrentTabIndex } = React.useContext(TabsContext);
 
-  const selected = "border-b-white border-indigo-600";
-
-  const styles = "pl-3 pr-3 pt-1 pb-1 cursor-pointer border rounded-t-sm";
-
+  const current = "bg-white";
   return (
     <button
+      className={`cursor-pointer p-1 pl-2 pr-2 text-[0.875rem] font-medium font-inter rounded-lg ${
+        currentTabIndex === index ? current : ""
+      }`}
       onClick={() => setCurrentTabIndex(index)}
       {...rest}
-      className={`${styles} ${currentTabIndex === index ? selected : ""}`}
     >
       {children}
     </button>

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function TabsList({ children }) {
-    return (
-        <nav>
-            <ul>{children}</ul>
-        </nav>
-    );
+export default function TabsList({ children, ...rest }) {
+  return (
+    <nav>
+      <ul {...rest}>{children}</ul>
+    </nav>
+  );
 }

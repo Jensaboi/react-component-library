@@ -13,15 +13,21 @@ export default function ComponentsPage() {
   return (
     <>
       <Header />
-      <main className="">
+      <main className="p-2 pt-5 flex flex-col gap-2 h-screen">
+        <h1 className="font-semibold text-2xl font-inter text-gray-900">
+          Components
+        </h1>
         <Tabs>
-          <Tabs.List>
+          <Tabs.List className="bg-gray-100 p-1 rounded-md flex flex-row justify-start items-center gap-1.5">
             {tabs.map((tab, index) => (
               <Tabs.Button index={index}>{tab.label}</Tabs.Button>
             ))}
           </Tabs.List>
 
-          <Tabs.Display tabs={tabs} />
+          <Tabs.Display
+            className="border-1 border-gray-200 h-full rounded-lg p-5"
+            tabs={tabs}
+          />
         </Tabs>
       </main>
     </>
