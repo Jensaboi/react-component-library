@@ -2,9 +2,9 @@
 
 export default function TabButton({ variant , children, className, ...rest}){
     const variants ={
-        'selected': 'border-b-2 border-indigo-600'
+        'selected': 'border-b-white border-indigo-600'
     }
-    const defaultStyle = "pl-3 pr-3 pb-1 cursor-pointer"
+    const defaultStyle = "pl-3 pr-3 pt-1 pb-1 cursor-pointer border rounded-t-sm"
 
     return(
         <button
