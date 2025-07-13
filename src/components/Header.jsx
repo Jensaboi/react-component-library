@@ -7,9 +7,7 @@ import NavListLinkItem from "./ui/NavListLinkItem";
 const MOBILE_WIDTH = 768;
 
 export default function Header() {
-  const [isMobile, setIsMobile] = React.useState(
-    window.innerWidth <= MOBILE_WIDTH
-  );
+  
   return (
     <header className="bg-white text-slate-900 border-slate-900 dark:bg-slate-900 dark:text-white dark:border-white p-5 h-[67px] flex justify-between items-center border-b-1">
       <Link to="/">
@@ -18,10 +16,10 @@ export default function Header() {
 
       <div className="flex justify-center items-center gap-2">
         <SearchModal />
-        {isMobile ? (
-          <HamburgerMenu />
-        ) : (
-          <nav>
+        
+          <HamburgerMenu className="block md:hidden" />
+       
+          <nav className="hidden md:block">
             <ul className="flex flex-row gap-1 justify-center items-center">
               <NavListLinkItem>Getting Started</NavListLinkItem>
               <NavListLinkItem to="/Components">Components</NavListLinkItem>
@@ -29,7 +27,7 @@ export default function Header() {
               <NavListLinkItem>Github</NavListLinkItem>
             </ul>
           </nav>
-        )}
+        
       </div>
     </header>
   );

@@ -18,7 +18,7 @@ export default function ComponentsPage() {
     <>
       <Header />
 
-      <main className="container p-2 flex flex-col justify-start items-start">
+      <main className="container p-5 flex flex-col justify-start items-start">
         <TabsNavbar
           tabs={tabs}
           tabIndex={tabIndex}

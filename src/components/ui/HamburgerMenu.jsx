@@ -7,12 +7,12 @@ import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import NavListLinkItem from "./NavListLinkItem";
 
-export default function HamburgerMenu() {
+export default function HamburgerMenu({...rest}) {
   const [open, toggleOpen] = useToggle();
   const { toggleTheme } = React.useContext(ThemeContext);
 
   return (
-    <div>
+    <div {...rest}>
       <button onClick={toggleOpen}>
         <RxHamburgerMenu className="utility-icons" size="20px" />
       </button>

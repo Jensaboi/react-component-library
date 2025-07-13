@@ -7,7 +7,7 @@ export default function LandingPage() {
       <Header />
       <main>
         <section className="p-5 dark:bg-slate-800 text-black dark:text-white">
-          <h1 class="text-gray-900 dark:text-blue-100 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          <h1 className="text-gray-900 dark:text-blue-100 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
             Build Faster with Reusable React Components
           </h1>
           <br />
