@@ -1,9 +1,5 @@
-import React from "react"
+import React from "react";
 
-export default function BadgesTab(){
-    return(
-        <section>
-            <h2>Badges</h2>
-        </section>
-    )
+export default function BadgesTab() {
+  return <></>;
 }
