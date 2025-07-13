@@ -1,34 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HamburgerMenu from "./ui/HamburgerMenu";
+import HamburgerMenu from "./HamburgerMenu";
+import Menu from "./ui/Menu/index";
 import SearchModal from "./ui/SearchModal";
 import Logo from "./Logo";
-import NavListLinkItem from "./ui/NavListLinkItem";
-const MOBILE_WIDTH = 768;
+import Navbar from "./NavBar";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { MdOutlineLightMode } from "react-icons/md";
+import { IoCloseOutline } from "react-icons/io5";
 
 export default function Header() {
-  
-  return (
-    <header className="bg-white text-slate-900 border-slate-900 dark:bg-slate-900 dark:text-white dark:border-white p-5 h-[67px] flex justify-between items-center border-b-1">
-      <Link to="/">
-        <Logo>React Components</Logo>
-      </Link>
+    return (
+        <header className="bg-white text-slate-900 border-slate-900 dark:bg-slate-900 dark:text-white dark:border-white p-5 h-[67px] flex justify-between items-center border-b-1">
+            <Link to="/">
+                <Logo>React Components</Logo>
+            </Link>
 
-      <div className="flex justify-center items-center gap-2">
-        <SearchModal />
-        
-          <HamburgerMenu className="block md:hidden" />
-       
-          <nav className="hidden md:block">
-            <ul className="flex flex-row gap-1 justify-center items-center">
-              <NavListLinkItem>Getting Started</NavListLinkItem>
-              <NavListLinkItem to="/Components">Components</NavListLinkItem>
-              <NavListLinkItem>Documents</NavListLinkItem>
-              <NavListLinkItem>Github</NavListLinkItem>
-            </ul>
-          </nav>
-        
-      </div>
-    </header>
-  );
+            <div className="flex justify-center items-center gap-2">
+                <SearchModal />
+                <Navbar />
+                <HamburgerMenu className="block md:hidden" />
+            </div>
+        </header>
+    );
 }
