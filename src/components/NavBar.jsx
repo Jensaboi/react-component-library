@@ -1,9 +1,9 @@
-import NavListLinkItem from "./ui/NavListLinkItem";
+import NavListLinkItem from "./NavListLinkItem";
 
-export default function Navbar() {
+export default function Navbar({ ...rest }) {
     return (
-        <nav className="hidden md:block">
-            <ul className="flex flex-row gap-1 justify-center items-center">
+        <nav {...rest}>
+            <ul className="flex flex-col gap-1 justify-start items-start md:flex-row md:justify-center md:items-center">
                 <NavListLinkItem>Getting Started</NavListLinkItem>
                 <NavListLinkItem to="/Components">Components</NavListLinkItem>
                 <NavListLinkItem>Documents</NavListLinkItem>

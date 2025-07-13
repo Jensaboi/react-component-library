@@ -9,12 +9,12 @@ import Navbar from "./NavBar";
 export default function HamburgerMenu() {
     const { toggleTheme } = React.useContext(ThemeContext);
     return (
-        <Menu>
+        <Menu className="block md:hidden">
             <Menu.Button>
                 <RxHamburgerMenu className="utility-icons" size="20px" />
             </Menu.Button>
             <Menu.Display className="bg-white text-black border-black dark:bg-slate-800 dark:text-white dark:border-white fixed top-0 left-0 w-full h-full flex flex-col gap-3">
-                <div>
+                <div className="w-full p-5 flex items-center justify-end self-end border-b border-white">
                     <button onClick={toggleTheme}>
                         <MdOutlineLightMode
                             className="utility-icons"

@@ -1,13 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
-import Menu from "./ui/Menu/index";
-import SearchModal from "./ui/SearchModal";
+import SearchMenu from "./SearchMenu";
 import Logo from "./Logo";
 import Navbar from "./NavBar";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { MdOutlineLightMode } from "react-icons/md";
-import { IoCloseOutline } from "react-icons/io5";
 
 export default function Header() {
     return (
@@ -17,9 +13,9 @@ export default function Header() {
             </Link>
 
             <div className="flex justify-center items-center gap-2">
-                <SearchModal />
-                <Navbar />
-                <HamburgerMenu className="block md:hidden" />
+                <SearchMenu />
+                <Navbar className="hidden md:block" />
+                <HamburgerMenu />
             </div>
         </header>
     );
