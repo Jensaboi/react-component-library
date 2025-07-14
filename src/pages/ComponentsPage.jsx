@@ -12,10 +12,10 @@ export default function ComponentsPage() {
     ];
     return (
         <>
-            <div className="bg-light-primary-100 flex flex-col h-screen w-full gap-2">
+            <div className="bg-light-primary-100 flex flex-col min-h-screen w-full gap-2">
                 <Header />
                 <main className="flex-1 p-5 w-full h-full">
-                    <Tabs className="container h-full mx-auto">
+                    <Tabs className="container mx-auto">
                         <h1 className="font-semibold text-2xl font-inter">
                             Components
                         </h1>
@@ -28,7 +28,7 @@ export default function ComponentsPage() {
                         </Tabs.List>
 
                         <Tabs.Display
-                            className="mt-3 p-5 w-full h-full shadow-2xl rounded-lg"
+                            className="mt-3 p-5 w-full shadow-2xl rounded-lg"
                             tabs={tabs}
                         ></Tabs.Display>
                     </Tabs>
