@@ -36,8 +36,13 @@ export default function Banner({
         title = "Update availbe";
     }
 
+<<<<<<< Updated upstream
     const defaultStyles =
         "m-w-[896px] w-fit min-w-[360px] font-sm gap-3 p-[16px] rounded-md";
+=======
+  const defaultStyles =
+    "w-full max-w-[896px] font-sm gap-3 p-[16px] rounded-md";
+>>>>>>> Stashed changes
 
     const statuss = {
         neutral: "bg-blue-100 text-blue-500",
