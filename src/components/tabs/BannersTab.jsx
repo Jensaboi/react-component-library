@@ -6,7 +6,7 @@ export default function BannersTab() {
     <>
       <div className="flex flex-col gap-2">
         <Banner status="success" size="100%"></Banner>
-        <Banner size="100%"></Banner>
+        <Banner></Banner>
         <Banner status="warning" size="100%"></Banner>
         <Banner status="error" size="100%"></Banner>
         <Banner status="success" size="100%">
@@ -20,7 +20,10 @@ export default function BannersTab() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
           veniam!
         </Banner>
-        <Banner status="error"></Banner>
+        <Banner status="error">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+          perspiciatis accusamus. Ab non tenetur fugit.
+        </Banner>
       </div>
     </>
   );

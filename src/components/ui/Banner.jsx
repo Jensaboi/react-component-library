@@ -36,7 +36,8 @@ export default function Banner({
     title = "Update availbe";
   }
 
-  const defaultStyles = "m-w-[896px] font-sm gap-3 p-[16px] rounded-md";
+  const defaultStyles =
+    "m-w-[896px] w-fit min-w-[360px] font-sm gap-3 p-[16px] rounded-md";
 
   const statuss = {
     neutral: "bg-blue-100 text-blue-500",

@@ -27,12 +27,8 @@ export default function LandingPage() {
               Get Started
             </Link>
           </section>
-          <div className="relative mt-10">
-            <span className="text-light-text-primary bg-light-primary-100 font-sans font-medium text-lg absolute mx-auto z-99 p-1  -top-4 left-[5%]">
-              Show case:
-            </span>
-            <article className="container mx-auto p-5 min-h-[480px] shadow-xl rounded-2xl"></article>
-          </div>
+
+          <article className="mt-10 container mx-auto p-5 min-h-[480px] shadow-xl rounded-2xl"></article>
         </main>
       </div>
     </>
