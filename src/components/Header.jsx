@@ -6,17 +6,17 @@ import Logo from "./Logo";
 import Navbar from "./NavBar";
 
 export default function Header() {
-    return (
-        <header className="bg-light-primary text-light-text p-5 flex justify-between items-center">
-            <Link to="/">
-                <Logo>React Components</Logo>
-            </Link>
+  return (
+    <header className="bg-light-primary text-light-text px-5 py-7 flex justify-between items-center">
+      <Link to="/">
+        <Logo>React Components</Logo>
+      </Link>
 
-            <div className="flex justify-center items-center gap-2">
-                <SearchMenu />
-                <Navbar className="hidden md:block" />
-                <HamburgerMenu />
-            </div>
-        </header>
-    );
+      <div className="flex justify-center items-center gap-2">
+        <SearchMenu />
+        <Navbar className="hidden md:block" />
+        <HamburgerMenu />
+      </div>
+    </header>
+  );
 }
