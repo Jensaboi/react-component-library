@@ -28,7 +28,7 @@ export default function ComponentsPage() {
                         </Tabs.List>
 
                         <Tabs.Display
-                            className="mt-3 p-5 w-full shadow-2xl rounded-lg"
+                            className="mt-3 p-5 w-full min-h-[600px] shadow-2xl rounded-lg"
                             tabs={tabs}
                         ></Tabs.Display>
                     </Tabs>
