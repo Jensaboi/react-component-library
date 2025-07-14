@@ -2,18 +2,19 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Root and Theme styles */
-:root{
-    --bg-color: #ffffff;
-    --text-color: #1a1b1f;
-    --border-divider: rgba(128, 128, 128, 0.37);
+@theme {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    
+    --color-light-100: oklch(98.5% 0 0);
+    --color-light-200: oklch(92% 0.004 286.32);
+    --color-light-300: oklch(70.5% 0.015 286.067);
+    --color-light-400: oklch(55.2% 0.016 285.938);
+    --color-light: oklch(20.5% 0 0);
 
-    font-family: 'Inter', sans-serif;
-
-}
-.dark{
-    --bg-color: #1a1b1f;
-    --text-color: #ffffff;
-    --border-divider: rgba(128, 128, 128, 0.37);
-
-    font-family: 'Inter', sans-serif;
+    --color-dark-100: oklch(98.5% 0 0);
+    --color-dark-200: oklch(92% 0.004 286.32);
+    --color-dark-300: oklch(70.5% 0.015 286.067);
+    --color-dark-400: oklch(70.5% 0.015 286.067);
 }

@@ -7,7 +7,7 @@ import Navbar from "./NavBar";
 
 export default function Header() {
     return (
-        <header className="bg-white text-slate-900 border-slate-900 dark:bg-slate-900 dark:text-white dark:border-white p-5 h-[67px] flex justify-between items-center border-b-1">
+        <header className="bg-light-100 text-slate-900 border-slate-900 dark:bg-slate-900 dark:text-white dark:border-white p-5 h-[67px] flex justify-between items-center border-b-1">
             <Link to="/">
                 <Logo>React Components</Logo>
             </Link>
