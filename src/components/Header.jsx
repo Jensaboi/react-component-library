@@ -7,7 +7,7 @@ import Navbar from "./NavBar";
 
 export default function Header() {
     return (
-        <header className="bg-light-primary shadow-2xl text-light-text p-5 h-[67px] flex justify-between items-center">
+        <header className="bg-light-primary text-light-text p-5 h-[67px] flex justify-between items-center">
             <Link to="/">
                 <Logo>React Components</Logo>
             </Link>

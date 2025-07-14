@@ -4,7 +4,7 @@ export default function GetStartedPage() {
     return (
         <>
             <Header />
-            <main>
+            <main className="">
                 <h1>Get started</h1>
             </main>
         </>

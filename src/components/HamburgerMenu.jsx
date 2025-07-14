@@ -13,20 +13,25 @@ export default function HamburgerMenu() {
             <Menu.Button>
                 <RxHamburgerMenu className="utility-icons" size="20px" />
             </Menu.Button>
-            <Menu.Display className="bg-white text-black border-black dark:bg-slate-800 dark:text-white dark:border-white fixed top-0 left-0 w-full h-full flex flex-col gap-3">
-                <div className="w-full p-5 flex items-center justify-end self-end border-b border-white">
-                    <button onClick={toggleTheme}>
-                        <MdOutlineLightMode
-                            className="utility-icons"
-                            size="20px"
-                        />
-                    </button>
-                    <Menu.Button>
-                        <IoCloseOutline className="utility-icons" size="26px" />
-                    </Menu.Button>
-                </div>
+            <Menu.Display className="fixed top-0 left-0 w-full flex-col justify-start items-end">
+                <div className="bg-light-primary">
+                    <div className="w-full p-5 flex items-center justify-end self-end border-b border-white">
+                        <button onClick={toggleTheme}>
+                            <MdOutlineLightMode
+                                className="utility-icons"
+                                size="20px"
+                            />
+                        </button>
+                        <Menu.Button>
+                            <IoCloseOutline
+                                className="utility-icons"
+                                size="26px"
+                            />
+                        </Menu.Button>
+                    </div>
 
-                <Navbar />
+                    <Navbar />
+                </div>
             </Menu.Display>
         </Menu>
     );
