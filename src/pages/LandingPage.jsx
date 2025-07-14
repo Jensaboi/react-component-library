@@ -15,7 +15,7 @@ export default function LandingPage() {
                             </h1>
 
                             <p className="text-light-text-100 font-sans text-lg font-medium">
-                                Kickstart your next React app with customizable,
+                                Kickstart your next React app with,
                                 <br /> reusable UI components that are <br />
                                 easy to integrate and modify.
                             </p>

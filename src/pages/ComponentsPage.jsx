@@ -14,12 +14,12 @@ export default function ComponentsPage() {
         <>
             <div className="bg-light-primary-100 flex flex-col h-screen w-full gap-2">
                 <Header />
-                <main className="flex-1 p-5 w-full h-screen">
-                    <Tabs className="h-full container mx-auto">
+                <main className="flex-1 p-5 w-full h-full">
+                    <Tabs className="container h-full mx-auto">
                         <h1 className="font-semibold text-2xl font-inter">
                             Components
                         </h1>
-                        <Tabs.List className="bg-light-primary-200 max-w-fit p-1 rounded-md flex flex-row justify-start items-center gap-1.5">
+                        <Tabs.List className="bg-light-primary-200 max-w-fit shadow-lg py-1 px-2 rounded-md flex flex-row justify-start items-center gap-1.5">
                             {tabs.map((tab, index) => (
                                 <Tabs.Button key={tab.label} index={index}>
                                     {tab.label}
