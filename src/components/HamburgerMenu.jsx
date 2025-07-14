@@ -13,9 +13,9 @@ export default function HamburgerMenu() {
             <Menu.Button>
                 <RxHamburgerMenu className="utility-icons" size="20px" />
             </Menu.Button>
-            <Menu.Display className="fixed top-0 left-0 w-full flex-col justify-start items-end">
+            <Menu.Display className="fixed top-0 left-0 w-full h-screen flex-col justify-start items-end">
                 <div className="bg-light-primary">
-                    <div className="w-full p-5 flex items-center justify-end self-end border-b border-white">
+                    <div className="p-5 flex items-center justify-end self-end border-b border-white">
                         <button onClick={toggleTheme}>
                             <MdOutlineLightMode
                                 className="utility-icons"
