@@ -7,11 +7,14 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     
-    --color-light-100: oklch(98.5% 0 0);
-    --color-light-200: oklch(92% 0.004 286.32);
-    --color-light-300: oklch(70.5% 0.015 286.067);
-    --color-light-400: oklch(55.2% 0.016 285.938);
-    --color-light: oklch(20.5% 0 0);
+    --color-light-primary: oklch(98.5% 0 0);
+    --color-light-primary-100: oklch(98.5% 0 0);
+    --color-light-primary-200: oklch(96.7% 0.001 286.375);
+    --color-light-primary-300: oklch(92% 0.004 286.32);
+    --color-light-primary-400: oklch(87.1% 0.006 286.286);
+    --color-light-primary-500: oklch(70.5% 0.015 286.067);
+    --color-light-text-primary: oklch(20.5% 0 0);
+    --color-light-text-100: oklch(43.9% 0 0);
 
     --color-dark-100: oklch(98.5% 0 0);
     --color-dark-200: oklch(92% 0.004 286.32);

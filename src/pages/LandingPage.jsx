@@ -2,30 +2,35 @@ import Header from "../components/Header";
 import { Link } from "react-router-dom";
 
 export default function LandingPage() {
-  return (
-    <>
-      <Header />
-      <main className="h-screen">
-        <section className="p-5 h-full dark:bg-slate-800 text-black dark:text-white">
-          <h1 className="text-gray-900 dark:text-blue-100 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-            Build Faster with Reusable React Components
-          </h1>
-          <br />
-          <br />
-          <p className="text-lg font-semibold">
-            Kickstart your next React app with customizable, reusable UI
-            components that are easy to integrate and modify.
-          </p>
-          <br />
+    return (
+        <>
+            <Header />
+            <main className="p-5 bg-light-primary-100 h-screen flex flex-col justify-start items-center gap-10">
+                <section className="flex flex-col justify-start items-center gap-5">
+                    <div className="text-center">
+                        <h1 className="font-sans text-light-text-primary text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                            Build Faster with Reusable React Components
+                        </h1>
 
-          <Link
-            className="bg-green-500 shadow-md hover:bg-green-600 hover:shadow-lg text-white text-xl leading-tight tracking-tight font-bold p-4 pl-8 pr-8 rounded-lg"
-            to=""
-          >
-            Get Started
-          </Link>
-        </section>
-      </main>
-    </>
-  );
+                        <p className="text-light-text-100 font-sans text-lg font-medium">
+                            Kickstart your next React app with customizable,
+                            reusable UI components that are easy to integrate
+                            and modify.
+                        </p>
+                    </div>
+                    <Link
+                        className="bg-green-500 shadow-md hover:bg-green-600 active:bg-green-700 hover:shadow-lg text-sm text-light-primary font-semibold px-4 py-3 rounded-md"
+                        to=""
+                    >
+                        Get Started
+                    </Link>
+                </section>
+                <article className="bg-light-primary w-full h-full p-2 shadow-xl rounded-2xl">
+                    <h2 className="text-light-text-primary font-sans font-medium text-lg text-center">
+                        Show case:
+                    </h2>
+                </article>
+            </main>
+        </>
+    );
 }
