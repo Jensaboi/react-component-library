@@ -12,26 +12,28 @@ export default function ComponentsPage() {
     ];
     return (
         <>
-            <Header />
-            <main className="bg-light-primary-100 p-5 w-full h-screen">
-                <Tabs className="h-full  container m-auto">
-                    <h1 className="font-semibold text-2xl font-inter">
-                        Components
-                    </h1>
-                    <Tabs.List className="bg-light-primary-200 max-w-fit p-1 rounded-md flex flex-row justify-start items-center gap-1.5">
-                        {tabs.map((tab, index) => (
-                            <Tabs.Button key={tab.label} index={index}>
-                                {tab.label}
-                            </Tabs.Button>
-                        ))}
-                    </Tabs.List>
+            <div className="bg-light-primary-100 flex flex-col h-screen w-full gap-2">
+                <Header />
+                <main className="flex-1 p-5 w-full h-screen">
+                    <Tabs className="h-full container mx-auto">
+                        <h1 className="font-semibold text-2xl font-inter">
+                            Components
+                        </h1>
+                        <Tabs.List className="bg-light-primary-200 max-w-fit p-1 rounded-md flex flex-row justify-start items-center gap-1.5">
+                            {tabs.map((tab, index) => (
+                                <Tabs.Button key={tab.label} index={index}>
+                                    {tab.label}
+                                </Tabs.Button>
+                            ))}
+                        </Tabs.List>
 
-                    <Tabs.Display
-                        className="mt-3 p-5 w-full h-full shadow-2xl rounded-lg"
-                        tabs={tabs}
-                    ></Tabs.Display>
-                </Tabs>
-            </main>
+                        <Tabs.Display
+                            className="mt-3 p-5 w-full h-full shadow-2xl rounded-lg"
+                            tabs={tabs}
+                        ></Tabs.Display>
+                    </Tabs>
+                </main>
+            </div>
         </>
     );
 }
