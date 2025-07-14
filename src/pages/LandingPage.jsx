@@ -20,7 +20,7 @@ export default function LandingPage() {
                     </div>
                     <Link
                         className="bg-green-500 shadow-md hover:bg-green-600 active:bg-green-700 hover:shadow-lg text-sm text-light-primary font-semibold px-4 py-3 rounded-md"
-                        to=""
+                        to="/Get started"
                     >
                         Get Started
                     </Link>
