@@ -14,7 +14,7 @@ export default function Header() {
 
             <div className="flex justify-center items-center gap-2">
                 <SearchMenu />
-                <Navbar />
+                <Navbar className="hidden md:block" />
                 <HamburgerMenu />
             </div>
         </header>

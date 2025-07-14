@@ -25,7 +25,7 @@ export default function LandingPage() {
                         Get Started
                     </Link>
                 </section>
-                <article className="bg-light-primary w-full h-full p-2 shadow-xl rounded-2xl">
+                <article className="bg-light-primary container m-auto h-full p-2 shadow-xl rounded-2xl">
                     <h2 className="text-light-text-primary font-sans font-medium text-lg text-center">
                         Show case:
                     </h2>
