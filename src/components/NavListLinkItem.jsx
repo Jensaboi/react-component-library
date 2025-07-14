@@ -7,7 +7,7 @@ export default function NavListLinkItem({ size, to, children }) {
         large: "",
     };
     return (
-        <li className="hover:underline p-1 text-md font-semibold">
+        <li className="hover:underline text-md font-medium">
             <Link to={to}>{children}</Link>
         </li>
     );

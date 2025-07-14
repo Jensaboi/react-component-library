@@ -1,9 +1,9 @@
 import NavListLinkItem from "./NavListLinkItem";
 
-export default function Navbar({ ...rest }) {
+export default function Navbar() {
     return (
-        <nav {...rest}>
-            <ul className="flex flex-col gap-1 justify-start items-start md:flex-row md:justify-center md:items-center">
+        <nav className="hidden md:block">
+            <ul className="flex flex-col gap-3 justify-start items-start md:flex-row md:justify-center md:items-center">
                 <NavListLinkItem to="/Get started">
                     Getting Started
                 </NavListLinkItem>

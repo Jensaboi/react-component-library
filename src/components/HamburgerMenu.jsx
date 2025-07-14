@@ -10,28 +10,23 @@ export default function HamburgerMenu() {
     const { toggleTheme } = React.useContext(ThemeContext);
     return (
         <Menu className="block md:hidden">
-            <Menu.Button>
-                <RxHamburgerMenu className="utility-icons" size="20px" />
+            <Menu.Button className="cursor-pointer">
+                <RxHamburgerMenu size="20px" />
             </Menu.Button>
-            <Menu.Display className="fixed top-0 left-0 w-full h-screen flex-col justify-start items-end">
-                <div className="bg-light-primary">
-                    <div className="p-5 flex items-center justify-end self-end border-b border-white">
-                        <button onClick={toggleTheme}>
-                            <MdOutlineLightMode
-                                className="utility-icons"
-                                size="20px"
-                            />
-                        </button>
-                        <Menu.Button>
-                            <IoCloseOutline
-                                className="utility-icons"
-                                size="26px"
-                            />
-                        </Menu.Button>
-                    </div>
-
-                    <Navbar />
+            <Menu.Display className="fixed top-0 left-0 w-full h-screen flex flex-col justify-start items-end">
+                <div className="bg-light-primary w-full p-5 flex items-center justify-end gap-2">
+                    <button className="cursor-pointer" onClick={toggleTheme}>
+                        <MdOutlineLightMode
+                            className="utility-icons"
+                            size="20px"
+                        />
+                    </button>
+                    <Menu.Button className="cursor-pointer">
+                        <IoCloseOutline size="26px" />
+                    </Menu.Button>
                 </div>
+
+                <Navbar className="bg-light-primary w-full h-full p-5" />
             </Menu.Display>
         </Menu>
     );

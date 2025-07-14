@@ -5,9 +5,9 @@ export default function LandingPage() {
     return (
         <>
             <Header />
-            <main className="p-5 bg-light-primary-100 h-screen flex flex-col justify-start items-center gap-10">
-                <section className="flex flex-col justify-start items-center gap-5">
-                    <div className="text-center">
+            <main className="p-5 bg-light-primary-100 h-screen w-full">
+                <section className="my-0 mx-auto container flex flex-col justify-start items-center gap-5">
+                    <div className="text-center w-full">
                         <h1 className="font-sans text-light-text-primary text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
                             Build Faster with Reusable React Components
                         </h1>
