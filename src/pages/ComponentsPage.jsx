@@ -21,11 +21,7 @@ export default function ComponentsPage() {
         <main className="flex-1 p-5 w-full h-full">
           <Tabs className="container mx-auto">
             <h1 className="font-semibold text-2xl font-inter">Components</h1>
-<<<<<<< Updated upstream
             <Tabs.List className="bg-light-primary-200 mt-5 max-w-fit shadow-sm py-2 px-3 rounded-md flex flex-row justify-start items-center gap-1.5">
-=======
-            <Tabs.List className="bg-light-primary-200 mt-3 max-w-fit shadow-sm py-1 px-2 rounded-md flex flex-row justify-start items-center gap-1.5">
->>>>>>> Stashed changes
               {tabs.map((tab, index) => (
                 <Tabs.Button key={tab.label} index={index}>
                   {tab.label}
