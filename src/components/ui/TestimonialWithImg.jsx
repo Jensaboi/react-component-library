@@ -49,7 +49,7 @@ export default function TestimonialWithImg({
       </div>
     </div>
   ) : (
-    <div className="">
+    <div>
       <div className="lg:hidden max-w-[376px] min-h-[552px] px-6 py-10 flex flex-col justify-center items-center gap-16 shadow-lg">
         <div className=" flex justify-center items-center ">
           <img src={workcationIcon} />
