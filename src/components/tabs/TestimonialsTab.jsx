@@ -9,6 +9,13 @@ export default function TestimonialsTab() {
         praesentium dignissimos dolorem dolorum quisquam amet nesciunt. Mollitia
         quibusdam nostrum voluptate corrupti culpa!
       </TestimonialWithImg>
+
+      <br />
+      <TestimonialWithImg name={"May Andersons"}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        praesentium dignissimos dolorem dolorum quisquam amet nesciunt. Mollitia
+        quibusdam nostrum voluptate corrupti culpa!
+      </TestimonialWithImg>
     </>
   );
 }
